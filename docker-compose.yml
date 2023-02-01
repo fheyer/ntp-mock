@@ -1,0 +1,10 @@
+version: '3.5'
+services:
+  ntp:
+    build:
+      context: .
+    ports:
+      - "${EXT_IP}:123:123/udp"
+    env_file: .env
+    cap_add:
+      - SYS_TIME
