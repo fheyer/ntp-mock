@@ -23,4 +23,4 @@ EXPOSE 123/udp
 HEALTHCHECK CMD chronyc tracking || exit 1
 
 # start
-CMD [ "/usr/sbin/chronyd", "-d", "-s"]
+CMD [ "/usr/sbin/chronyd", "-d", "-s", "-x"]

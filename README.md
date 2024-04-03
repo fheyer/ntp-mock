@@ -26,5 +26,5 @@ After changes to `FAKETIME` the NTP service has to be restarted:
 
 Alternatively you can run the service purely with Docker providing the complete setup in the parameters of `docker run`:
 
-    docker build -t ntp-mock:latest . && docker run -p 127.0.0.1:123:123/udp --env FAKETIME=+15d --cap-add SYS_TIME ntp-mock:latest
+    docker build -t ntp-mock:latest . && docker run -p 127.0.0.1:123:123/udp --env FAKETIME=+15d ntp-mock:latest
 
