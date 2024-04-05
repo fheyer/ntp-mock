@@ -16,11 +16,11 @@ Clients have to be set up to use the mock time source via the IP of the host Doc
 A Dockerfile and a service definition for docker compose are included. 
 So after setting up `.env` you can run the service using docker compose:
 
-    docker-compose build && docker-compose up -d ntp
+    docker compose build && docker compose up -d ntp
 
 After changes to `FAKETIME` the NTP service has to be restarted:
 
-    docker-compose stop ntp && docker-compose up -d ntp
+    docker compose stop ntp && docker compose up -d ntp
 
 ### Run manually using Docker
 
