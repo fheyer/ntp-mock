@@ -1,6 +1,6 @@
 # Delivering mock time with NTP
 
-The included NTP server can be used to update clients with a fake time.
+The included NTP server can be used to update clients with a fake time. For example this allows running time dependent tests on clients connected over a network.
 The delta to correct time is controlled by env variable `FAKETIME` (on command line or in `.env`).
 For example set
 
